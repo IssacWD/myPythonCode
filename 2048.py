@@ -61,10 +61,10 @@ def move(mtr, dirct):#the core code!move by the four direction
         for j in range(4):
             for i in range(3, 0, -1):
                 for k in range(0,i):
-                   if mtr[k+1][j] == 0:
+                    if mtr[k+1][j] == 0:
                       mtr[k+1][j] = mtr[k][j]
                       mtr[k][j]=0
-                   elif mtr[k+1][j]==mtr[k][j] and (4 *(k+1)+j) not in visit and (4*k+j) not in visit:
+                    elif mtr[k+1][j]==mtr[k][j] and (4 *(k+1)+j) not in visit and (4*k+j) not in visit:
                       mtr[k+1][j]*=2
                       mtr[k][j]=0
                       score=mtr[k+1][j]
@@ -87,10 +87,10 @@ def move(mtr, dirct):#the core code!move by the four direction
         for i in range(4):
             for j in range(3, 0, -1):
                 for k in range(j):
-                   if mtr[i][k+1]  == 0:
+                    if mtr[i][k+1]  == 0:
                       mtr[i][k+1] = mtr[i][k]
                       mtr[i][k]=0
-                   elif mtr[i][k] ==mtr[i][k+1] and 4 * i + k + 1 not in visit and 4 * i + k not in visit:
+                    elif mtr[i][k] ==mtr[i][k+1] and 4 * i + k + 1 not in visit and 4 * i + k not in visit:
                       mtr[i][k+1]*=2
                       mtr[i][k]=0
                       score+=mtr[i][k+1]

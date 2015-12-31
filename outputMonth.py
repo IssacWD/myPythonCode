@@ -1,3 +1,11 @@
+# coding=utf-8
+#********************************************************
+# > OS     : Windows / Cent OS 6.5
+#	> Author : JasonGUTU
+#	> Mail   : intergujinjin@foxmail.com
+#	> Time   : 2015/12/30
+#********************************************************
+
 # Print the calendar for a month in a year
 def printMonth(year,month):
 	# Print the Title of month
@@ -10,6 +18,7 @@ def printMonthTitle(year,month):
 	print("  ",getMonthName(month),"  ",year)
 	print("====================================")
 	print(" Sun Mon Tue Wed Thu Fri Sat")
+	print("====================================")
 
 # Print month body
 def printMonthBody(year,month):
