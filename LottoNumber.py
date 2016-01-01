@@ -1,3 +1,10 @@
+# coding=utf-8
+#********************************************************
+# > OS     : Linux CentOS 6.5 / Windows
+#	> Author : JasonGUTU
+#	> Mail   : intergujinjin@foxmail.com
+#	> Time   : 2015年12月31日 
+#********************************************************
 # Create a list of 99 boolean elements with value False
 isCovered = 99 * [False]
 endOfInput = False
