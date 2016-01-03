@@ -8,21 +8,21 @@
 import turtle
 
 # Calculate the distance
-def distance(point1,point2):
+def distance(point1, point2):
 	return ((point2[0] - point1[0]) ** 2 + (point2[1] - point1[1]) ** 2 + (point2[2] - point1[1]) ** 2) ** 0.5
 
 # Find the max and min of distance
-def findMaxAndMin(row,FindWhat):
+def findMaxAndMin(row, FindWhat):
 	# Define temp var
 	# Value point1 point2 numberOfPonit1 numberOfPoint2
-	maximum = [0,0,0,0,0]
-	minimum = [0,0,0,0,0]
+	maximum = [0, 0, 0, 0, 0]
+	minimum = [0, 0, 0, 0, 0]
 	# Start compare
 	if FindWhat == 1:
 		for i in range(len(row)):
-			for j in range(i + 1,len(row)):
-				if distance(row[i],row[j]) >= maximum[0]:
-					maximum[0] = distance(row[i],row[j])
+			for j in range(i + 1, len(row)):
+				if distance(row[i], row[j]) >= maximum[0]:
+					maximum[0] = distance(row[i], row[j])
 					maximum[1] = row[i]
 					maximum[2] = row[j]
 					maximum[3] = i
@@ -30,11 +30,11 @@ def findMaxAndMin(row,FindWhat):
 		return maximum
 	elif FindWhat ==2:
 		for i in range(len(row)):
-			for j in range(i + 1,len(row)):
+			for j in range(i + 1, len(row)):
 				if i == 0 and j == 1:
-					minimum[0] = distance(row[i],row[j])
-				if distance(row[i],row[j]) <= minimum[0]:
-					minimum[0] = distance(row[i],row[j])
+					minimum[0] = distance(row[i], row[j])
+				if distance(row[i], row[j]) <= minimum[0]:
+					minimum[0] = distance(row[i], row[j])
 					minimum[1] = row[i]
 					minimum[2] = row[j]
 					minimum[3] = i
@@ -52,33 +52,35 @@ def getInputlist():
 	# Initialize a multidimensional list
 	row = []
 	for i in range(numberOfPoints):
-		row.append([0,0,0])
+		row.append([0, 0, 0])
 	# Get the input for every point
 	for i in range(numberOfPoints):
 		print("Please input the ",i + 1," point, splited by space :", end = " ")
 		coordinateSTR = input()
 		coordinate = coordinateSTR.split()
+		for i in range(len(coordinate)):
+			coordinate[i] = eval(coordinate[i])
 		row.append(coordinate)
 	return row
 
 # Turtle the coordinate system
 def turtleXYZ():
-	turtle.goto(0,0)
+	turtle.goto(0, 0)
 	turtle.pd()
-	turtle.goto(0,300)
-	turtle.goto(6,290)
+	turtle.goto(0, 300)
+	turtle.goto(6, 290)
 	turtle.pu()
-	turtle.goto(-6,290)
+	turtle.goto(-6, 290)
 	turtle.pd()
-	turtle.goto(0,300)
-	turtle.goto(0,0)
-	turtle.goto(300,0)
-	turtle.goto(290,6)
+	turtle.goto(0, 300)
+	turtle.goto(0, 0)
+	turtle.goto(300, 0)
+	turtle.goto(290, 6)
 	turtle.pu()
-	turtle.goto(290,-6)
+	turtle.goto(290, -6)
 	turtle.pd()
-	turtle.goto(300,0)
-	turtle.goto(0,0)
+	turtle.goto(300, 0)
+	turtle.goto(0, 0)
 	turtle.rt(135)
 	turtle.fd(212.1)
 	turtle.lt(135)
@@ -87,7 +89,7 @@ def turtleXYZ():
 	turtle.lt(90)
 	turtle.fd(10)
 	turtle.pu()
-	turtle.goto(0,0)
+	turtle.goto(0, 0)
 
 # Draw ponits
 def drawPoints(row):
@@ -131,6 +133,7 @@ def main():
 	turtleXYZ()
 	drawPoints(row)
 	displayResult(Valuelist,FindWhat)
+	get = input()
 
 main()
 
