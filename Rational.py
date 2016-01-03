@@ -80,7 +80,7 @@ class Rational:
 		else:
 			return self.__denominator
 
-	def gcd(n,d):
+	def gcd(self,n,d):
 		n1 = abs(n)
 		n2 = abs(d)
 		gcd = 1
