@@ -1,0 +1,58 @@
+from tkinter import *
+import math
+from datetime import datetime
+
+class StillClock(Canvas):
+    def __init__(self, container):
+        super().__init__(container)
+        self.setCurrentime()
+
+    def getHour(self):
+        return self.__hour
+
+    def setHour(self, hour):
+        self.__hour = hour
+        self.delete("clock")
+        self.drawClock()
+
+    def getMinute(self):
+        return self.__minute
+
+    def setMinute(self, minute):
+        self.__minute = mintue
+        self.delete("clock")
+        self.drawClock()
+
+    def getSecond(self):
+        return self.__second
+
+    def setSecond(self, second):
+        self.__second = second
+        self.delete("clock")
+        self.drawClock()
+
+    def setCurrentTime(self):
+        d = datetime.now()
+        self.__hour = d.hour
+        self.__minute = d.minute
+        self.__second = d.second
+        self.delete("clock")
+        self.drawClock()
+
+    def drawClock(self):
+        width = float(self["width"])
+        height = float(self["height"])
+        radius = min(width, height) / 2.4
+        secondHandLength = radius * 0.8
+        minuteHandLength = radius * 0.65
+        hourHandLength = radius * 0.5
+
+        self.create_oval(width / 2 - radius + 5, height / 2 - radius, width / 2 + radius, height / 2 + radius, tags = "clock")
+        self.create_text(width / 2 - radius + 5, height / 2, text = "9", tags = "clock")
+        self.create_text(width / 2 - radius - 5, height / 2, text = "3", tags = "clock")
+        self.create_text(width / 2, height / 2 - radius + 5, text = "12", tags = "clock")
+        self.create_text(width / 2, height / 2 + radius - 5, text = "6", tags = "clock")
+
+        cCenter = width / 2
+        yCenter = height / 2
+        second = self.__second
