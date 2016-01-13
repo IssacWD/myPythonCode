@@ -8,7 +8,7 @@
 # A class for Rational Numbers
 class Rational:
 	def __init__(self,numerator = 0,denominator = 1):
-		divisor = gcda(numerator,denominator)
+		divisor = Rational.gcd(self,numerator,denominator)
 		self.__numerator = (1 if denominator > 0 else -1) * int(numerator / divisor)
 		self.__denominator = int(abs(denominator) / divisor)
 
