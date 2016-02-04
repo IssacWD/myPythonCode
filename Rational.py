@@ -12,7 +12,7 @@ class Rational:
 		self.__numerator = (1 if denominator > 0 else -1) * int(numerator / divisor)
 		self.__denominator = int(abs(denominator) / divisor)
 
-	# Add a ratinal number to this rational number
+	# Add a rational number to this rational number
 	def __add__(self,secondRational):
 		n = self.__numerator * secondRational[1] + self.__denominator * secondRational[0]
 		d = self.__denominator * secondRational[1]

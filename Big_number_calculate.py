@@ -10,18 +10,23 @@
 
 class BigNumber:
     def __init__(self, string_of_number):
+        if isinstance(string_of_number, int):
+            string_of_number = str(string_of_number)
         string_without_space = string_of_number.strip()
-        list_two_part = string_without_space.split('.')
-        self.__list_each_int = list(list_two_part[0])
-        self.__list_each_float = list(list_two_part[1])
+        list_two_parts = string_without_space.split('.')
+        self.int_part = list(list_two_parts[0])
+        self.float_part = list(list_two_parts[1])
 
     def __add__(self, another_BigNumber):
-        pass
+        new_float = list()
+        new_int = list()
+        
 
     def __sub__(self, another_BigNumber):
 
 
     def __mul__(self, another_BigNumber):
+
 
     def __truediv__(self, another_BigNumber):
 
@@ -42,4 +47,6 @@ class BigNumber:
     def __gt__(self, another_BigNumber):
 
     def __getitem__(self, index):
+
+
 
