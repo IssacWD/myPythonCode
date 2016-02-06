@@ -7,7 +7,11 @@
 #********************************************************
 # Word Guess Game
 import random
+import os
+import sys
 
+TERM_LINES = os.get_terminal_size().lines
+TERM_COLUMNS = os.get_terminal_size().columns
 
 def get_input():
     char = input("Guess latter:")
@@ -31,6 +35,10 @@ def display_word(list_of_word):
             print(i[0], end = '')
     print()
 
+def Welcome_game():
+    pass
+
+
 
 def change(char, word_list):
     for item in word_list:
@@ -47,6 +55,10 @@ def judge(word_list):
 
 
 def main():
+
+    if TERM_COLUMNS < 60:
+        sys.exit()
+
     word_list = randomly_question()
     display_word(word_list)
     index = 0
