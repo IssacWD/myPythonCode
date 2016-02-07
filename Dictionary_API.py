@@ -25,7 +25,7 @@ import json
 API_KEY = '2110071943'
 KEYFROM = 'magkathea'
 
-def get_translation(txt):
+def get_translation_YouDao(txt):
     url = 'http://fanyi.youdao.com/openapi.do'
     data = {
         'keyfrom':KEYFROM,
@@ -44,6 +44,7 @@ def get_translation(txt):
     except ValueError:
         pass
 
+# YouDao
 # {
 #     "errorCode":0
 #     "query":"good",
@@ -67,9 +68,7 @@ def get_translation(txt):
 #     ]
 # }
 
-
-
-def S_json(json_data):
+def S_json_YouDao(json_data):
     query = json_data.get('query', '')
     translation = json_data.get('translation', '')
     basic = json_data.get('basic', '')
@@ -102,7 +101,7 @@ def main():
     while True:
         txt = input('请输入要查询的文本：\n')
         if txt:
-            S_json(get_translation(txt))
+            S_json_YouDao(get_translation_YouDao(txt))
 
 if __name__ == '__main__':
     main()
