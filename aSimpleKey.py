@@ -5,6 +5,7 @@
 #	> Mail   : intergujinjin@foxmail.com
 #	> Time   : 2016/1/13
 #********************************************************
+
 def get_a_str_of_number():
     str_of_number = input("Please input the string of number :")
     if judge_the_str(str_of_number):

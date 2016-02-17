@@ -27,7 +27,7 @@ def get_func():
 def get_a_b_n():
     a = eval(input("Input a:"))
     b = eval(input("Input b:"))
-    if b <= a:
+    while b <= a:
         a = eval(input("a should be smaller than b\nPlease input a again:"))
     n = int(input("Input the number of sub-intervals:"))
     middleware = (b - a) / n
