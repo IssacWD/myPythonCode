@@ -14,7 +14,7 @@ def distance(point1, point2):
 # Find the max and min of distance
 def findMaxAndMin(row, FindWhat):
 	# Define temp var
-	# Value point1 point2 numberOfPonit1 numberOfPoint2
+	#  Value point1 point2 numberOfPonit1 numberOfPoint2
 	maximum = [0, 0, 0, 0, 0]
 	minimum = [0, 0, 0, 0, 0]
 	# Start compare

@@ -21,7 +21,7 @@ def judge_the_str(str_of_number):
         else:
             return False
 def get_list(str_of_number):
-    list_of_number = []
+    list_of_number = list()
     for x in str_of_number:
         list_of_number.append(x)
     return list_of_number
