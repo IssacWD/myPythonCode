@@ -6,8 +6,11 @@
 #	> Time   : 2016/2/5
 #********************************************************
 # The Question One
-final_account = eval(input("Enter the final account value:"))
-interest_rate = eval(input("Enter the annual interest rate:"))
-years = eval(input("Enter the number of years:"))
+from AssTools.getInput import get_number
+
+
+final_account = get_number('Enter the final account value:', sign=1, int_type=False)
+interest_rate = get_number('Enter the annual interest rate:', sign=1, int_type=False)
+years = get_number('Enter the number of years:', sign=1)
 print("The initial value is ", final_account / (1 + interest_rate * 0.01) ** years)
 
