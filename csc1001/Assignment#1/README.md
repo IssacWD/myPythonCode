@@ -1,6 +1,6 @@
 #Assignment CSC1001 #1
-###1. About class AssTools
-This class is wrote for **code reuse**. Because nearly every question need to judge whether the input is illegal. For higher accuracy, I use regular expression to match the input
+###1. About package AssTools
+This package is wrote for **code reuse**. Because nearly every question need to judge whether the input is illegal. For higher accuracy, I use regular expression to match the input
 ```Python
 #!AssTools/getInput.py
 import re
@@ -68,7 +68,6 @@ Enter an integer:10
 [Out]:
 4
 ```
-If the input is illegal:
 
 ###5. Question 4
 The **test result:**
@@ -104,8 +103,8 @@ def Judge(number):
     return True
 ```
 It is a simple algorithm for prime number judging. There many ways to optimize it's performance. But if the input number is not too big, the different will be small.
-
-If the input is illegal, for example, if the number is smaller than 3, it will raise:
+**Some illegal input error**
+For example, if the number is smaller than 3, it will raise:
 ```bash
 Do not have any number that meet the requirements!
 ```
@@ -120,6 +119,7 @@ Input the number of sub-intervals:10000
 [Out]:
 The result is 1.3793738814984595
 ```
+**Some illegal input error**
 If the function is not one of 'sin', 'cos' and 'tan', it will raise:
 ```bash
 Does not support this function!
