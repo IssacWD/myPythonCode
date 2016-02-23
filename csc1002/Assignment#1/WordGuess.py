@@ -18,9 +18,18 @@ def get_input():
 
 
 def randomly_question():
-    list_of_word = ['approve','alter','career','transform','exterior','petroleum','tendency','interfere','vacant','range']
-    index = random.randint(1, 10)
-    return list([i, 0 ] for i in list_of_word[index])
+    list_of_word = ['approve',
+                    'alter',
+                    'career',
+                    'transform',
+                    'exterior',
+                    'petroleum',
+                    'tendency',
+                    'interfere',
+                    'vacant',
+                    'range',
+                    ]
+    return list([i, 0 ] for i in random.choice(list_of_word))
 
 
 def display_word(list_of_word):
@@ -36,7 +45,6 @@ def change(char, word_list):
     for item in word_list:
         if item[0] == char and item[1] != 1:
             item[1] = 1
-            break
 
 
 def judge(word_list):
@@ -57,6 +65,6 @@ def main():
     print("Congradulations!")
     print("You have made %s trials: %s correct; %s incorrect" % (index, len(word_list), index - len(word_list)))
 
-
-main()
+if __name__ == '__main__':
+    main()
 

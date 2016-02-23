@@ -15,11 +15,11 @@ def get_number(num_str, int_type=True, sign=0, length=0):
                 print('Unvalidated Input! Please input again!')
                 return get_number(num_str, int_type=True, sign=sign, length=length)
         elif sign == 1:
-            if not re.compile(r'[1-9]\d*|0').match(number):
+            if not re.compile(r'[1-9]\d*').match(number):
                 print('Unvalidated Input! Please input again!')
                 return get_number(num_str, int_type=True, sign=sign, length=length)
         elif sign == -1:
-            if not re.compile(r'-[1-9]\d*|0').match(number):
+            if not re.compile(r'-[1-9]\d*').match(number):
                 print('Unvalidated Input! Please input again!')
                 return get_number(num_str, int_type=True, sign=sign, length=length)
         else:
@@ -28,16 +28,19 @@ def get_number(num_str, int_type=True, sign=0, length=0):
     else:
         if sign == 0:
             if not re.compile(r'-?([1-9]\d*\.\d*|0\.\d*[1-9]\d*|0?\.0+|0)').match(number):
-                print('Unvalidated Input! Please input again!')
-                return get_number(num_str, int_type=False, sign=sign, length=length)
+                if not re.compile(r'-?[1-9]\d*').match(number):
+                    print('Unvalidated Input! Please input again!')
+                    return get_number(num_str, int_type=False, sign=sign, length=length)
         elif sign == 1:
             if not re.compile(r'[1-9]\d*\.\d*|0\.\d*[1-9]\d*|0?\.0+|0').match(number):
-                print('Unvalidated Input! Please input again!')
-                return get_number(num_str, int_type=False, sign=sign, length=length)
+                if not re.compile(r'[1-9]\d*').match(number):
+                    print('Unvalidated Input! Please input again!')
+                    return get_number(num_str, int_type=False, sign=sign, length=length)
         elif sign == -1:
             if not re.compile(r'-([1-9]\d*\.\d*|0\.\d*[1-9]\d*)').match(number):
-                print('Unvalidated Input! Please input again!')
-                return get_number(num_str, int_type=False, sign=sign, length=length)
+                if not re.compile(r'-[1-9]\d*').match(number):
+                    print('Unvalidated Input! Please input again!')
+                    return get_number(num_str, int_type=False, sign=sign, length=length)
         else:
             print('Unvalidated Input! Wrong argument in the method!')
             return get_number(num_str, int_type=False, sign=sign, length=length)
