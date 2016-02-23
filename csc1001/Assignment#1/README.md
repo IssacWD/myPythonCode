@@ -10,10 +10,13 @@ To use those methods, you need to **import** this in front of your code.
 ```Python
 from AssTools.getInput import *method
 ```
+**It provide illegal input check.**
 If the input is illegal, it will print:
 ```bash
-Unvalidated Input! Wrong argument in the method!
+Unvalidated Input! Please input again!
 ```
+And let you input again
+
 Otherwise, function provides a argument 'length'. It acquiescently equal to 0 (no limit on number's length). If the number is out of range, it will raise:
 ```bash
 Unvalidated Input! Please check the length of your input!
