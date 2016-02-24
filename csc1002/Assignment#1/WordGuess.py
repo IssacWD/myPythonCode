@@ -35,9 +35,9 @@ def randomly_question():
 def display_word(list_of_word):
     for i in list_of_word:
         if i[1] == 0:
-            print('_', end = '')
+            print('_', end='')
         else:
-            print(i[0], end = '')
+            print(i[0], end='')
     print()
 
 
@@ -45,6 +45,7 @@ def change(char, word_list):
     for item in word_list:
         if item[0] == char and item[1] != 1:
             item[1] = 1
+            break
 
 
 def judge(word_list):
@@ -54,7 +55,7 @@ def judge(word_list):
     return False
 
 
-def main():
+if __name__ == '__main__':
     word_list = randomly_question()
     display_word(word_list)
     index = 0
@@ -65,6 +66,5 @@ def main():
     print("Congradulations!")
     print("You have made %s trials: %s correct; %s incorrect" % (index, len(word_list), index - len(word_list)))
 
-if __name__ == '__main__':
-    main()
+
 
