@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f79e1f22-a8c5-4779-baff-d2fd41fab40e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/csc1002/Assignment#1/README.md" afterPath="$PROJECT_DIR$/csc1002/Assignment#1/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/csc1002/Assignment#1/WordGuess.py" afterPath="$PROJECT_DIR$/csc1002/Assignment#1/WordGuess.py" />
-    </list>
+    <list default="true" id="f79e1f22-a8c5-4779-baff-d2fd41fab40e" name="Default" comment="" />
     <ignored path="myPythonCode.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
