@@ -7,8 +7,6 @@
 #********************************************************
 # The Question Five
 from AssTools.getInput import get_number
-import time
-
 
 def algorithm_Eratosthenes(max_number):
     import math
@@ -40,12 +38,7 @@ if __name__ == '__main__':
         print('Do not have any number that meet the requirements!')
     else:
         print('The prime numbers smaller than %s include:' % number)
-        a = time.clock()
-        _list = algorithm_Eratosthenes(number)
-        b = time.clock()
-        display(_list)
-        c = time.clock()
-        print('\n %s \n %s \n %s' % (b - a, c - b, c - a))
+        display(algorithm_Eratosthenes(number))
 
 
 

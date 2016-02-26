@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>README.html</title>
+	<meta name="generator" content="LibreOffice 5.0.5.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2016-02-26T16:35:31.848583356"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<style type="text/css">
+		p { font-family: "Lucida Grande", "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", "Lucida Sans Unicode", "Helvetica", "Arial", sans-serif }
+		h1.cjk { font-family: "Lucida Grande", "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", "Lucida Sans Unicode", "Helvetica", "Arial", sans-serif }
+		h1.ctl { font-family: "Lucida Grande", "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", "Lucida Sans Unicode", "Helvetica", "Arial", sans-serif }
+		h3.cjk { font-family: "Droid Sans Fallback" }
+		h3.ctl { font-family: "FreeSans" }
+		pre.cjk { font-family: "Nimbus Mono L", monospace }
+		code.cjk { font-family: "Nimbus Mono L", monospace }
+	</style>
+</head>
+<body lang="en-US" bgcolor="#ffffff" dir="ltr" style="border: none; padding: 0in">
+<h1 class="western"><a name="assignment-csc1001-#1"></a>Assignment
+CSC1001 #1</h1>
+<h3 class="western"><a name="1.-about-package-asstools"></a>1. About
+package AssTools</h3>
+<p>This package is wrote for <strong>code reuse</strong>. Because
+nearly every question need to judge whether the input is illegal. For
+higher accuracy, I use regular expression to match the input</p>
+<pre class="western"><code class="western">#!AssTools/getInput.py</code>
+<code class="western">import re</code></pre><p>
+The <strong>getInput</strong> class has the method which can help us
+to get currect input.<br/>
+To use those methods, you need to <strong>import</strong>
+this in front of your code.</p>
+<pre class="western" style="margin-bottom: 0.2in"><code class="western">from AssTools.getInput import *method</code></pre><p>
+<strong>It provide illegal input check.</strong><br/>
+If the input is
+illegal, it will print:</p>
+<pre class="western" style="margin-bottom: 0.2in"><code class="western">Unvalidated Input! Please input again!</code></pre><p>
+And let you input again</p>
+<p>Otherwise, function provides a argument ‘length’. It
+acquiescently equal to 0 (no limit on number’s length). If the
+number is out of range, it will raise:</p>
+<pre class="western" style="margin-bottom: 0.2in"><code class="western">Unvalidated Input! Please check the length of your input!</code></pre><h3 class="western">
+<a name="2.-question-1"></a>2. Question 1</h3>
+<p>The <strong>test result</strong>:</p>
+<pre class="western"><code class="western">[In]:</code>
+<code class="western">Enter the final account value:1000</code>
+<code class="western">Enter the annual interest rate:4.25</code>
+<code class="western">Enter the number of years:5</code></pre><p>
+For some practical reasons, I used format() function to output
+formatted printing. The result is correct to two decimal places.</p>
+<pre class="western"><code class="western">[Out]:</code>
+<code class="western">The initial value is 812.12 yuan</code></pre><h3 class="western">
+<a name="3.-question-2"></a>3. Question 2</h3>
+<p>The <strong>test result</strong>:</p>
+<pre class="western"><code class="western">[In]:</code>
+<code class="western">Enter an integer:3125</code>
+<code class="western">[Out]:</code>
+<code class="western">3</code>
+<code class="western">1</code>
+<code class="western">2</code>
+<code class="western">5</code></pre><p>
+The core code:</p>
+<pre class="western"><code class="western">#!q2.py</code>
+<code class="western">digits = ceil(log10(number))</code>
+<code class="western">output_list = list()</code>
+<code class="western">rest = number</code>
+<code class="western">for i in range(digits - 1, -1, -1):</code>
+<code class="western">    </code><code class="western">output_list.append(rest // (10 ** i))</code>
+<code class="western">    </code><code class="western">rest = rest % (10 ** i)</code></pre><p>
+For using method ceil() and log10(), you need to import them before
+use them:</p>
+<pre class="western"><code class="western">#!q2.py</code>
+<code class="western">from math import ceil, log10</code></pre><h3 class="western">
+<a name="4.-question-3"></a>4. Question 3</h3>
+<p>The <strong>test result:</strong></p>
+<pre class="western"><code class="western">[In]:</code>
+<code class="western">Enter an integer:10</code>
+<code class="western">[Out]:</code>
+<code class="western">4</code></pre><h3 class="western">
+<a name="5.-question-4"></a>5. Question 4</h3>
+<p>The <strong>test result:</strong></p>
+<pre class="western"><code class="western">[In]:</code>
+<code class="western">Please input a integer:5</code>
+<code class="western">[Out]:</code>
+<code class="western">m      m+1    m**(m+1)</code>
+<code class="western">1      2      1</code>
+<code class="western">2      3      8</code>
+<code class="western">3      4      81</code>
+<code class="western">4      5      1024</code>
+<code class="western">5      6      15625</code></pre><p>
+I formated the output for look good.</p>
+<h3 class="western"><a name="6.-question-5"></a>6. Question 5</h3>
+<pre class="western"><code class="western">[In]:</code>
+<code class="western">Enter an integer:100</code>
+<code class="western">[Out]:</code>
+<code class="western">The prime numbers smaller than 100 include:</code>
+<code class="western">2       3       5       7       11      13      17      19</code>
+<code class="western">23      29      31      37      41      43      47      53</code>
+<code class="western">59      61      67      71      73      79      83      89</code>
+<code class="western">97</code></pre><p>
+The core code to judge whether a number is prime:</p>
+<pre class="western"><code class="western">def Judge(number):</code>
+<code class="western">    </code><code class="western">for i in range(2, number):</code>
+<code class="western">        </code><code class="western">if number % i == 0:</code>
+<code class="western">            </code><code class="western">return False</code>
+<code class="western">    </code><code class="western">return True</code></pre><p>
+It is a simple algorithm for prime number judging. There many ways to
+optimize it’s performance. But if the input number is not too big,
+the different will be small.<br/>
+<strong>Some illegal input
+error</strong><br/>
+For example, if the number is smaller than 3, it
+will raise:</p>
+<pre class="western" style="margin-bottom: 0.2in"><code class="western">Do not have any number that meet the requirements!</code></pre><p>
+<strong>The performance of the algorithm</strong><br/>
+In the latest
+version of this programe, I used a new algorithm to calculate prime
+number:</p>
+<pre class="western"><code class="western">#!q5.py</code>
+<code class="western">def algorithm_Eratosthenes(max_number):</code>
+<code class="western">    </code><code class="western">import math</code>
+<code class="western">    </code><code class="western">list_of_bool = [True] * (max_number + 1)</code>
+<code class="western">    </code><code class="western">list_of_bool[0] = list_of_bool[1] = False</code>
+<code class="western">    </code><code class="western">for i in range(2, math.ceil(math.sqrt(max_number))):</code>
+<code class="western">        </code><code class="western">if not list_of_bool[i]:</code>
+<code class="western">            </code><code class="western">continue</code>
+<code class="western">        </code><code class="western">for j in range(i * i, max_number + 1, i):</code>
+<code class="western">            </code><code class="western">list_of_bool[j] = False</code>
+<code class="western">    </code><code class="western">return list_of_bool</code></pre><p>
+It uses sieve method to genarate prime number list.<br/>
+And I do the
+optimization for this algorithm so that it can run more fast.</p>
+<p>The results of how long time it cost to claculate the prime number
+smaller than 1000000:</p>
+<pre class="western"><code class="western">0.173660 s</code>
+<code class="western">0.127186 s</code>
+<code class="western">0.129941 s</code>
+<code class="western">0.140626 s</code>
+<code class="western">0.134029 s</code></pre><p>
+We can get faster by using <code class="western">Pypy3</code> to run
+this code:<br/>
+The results:</p>
+<pre class="western"><code class="western">0.048000 s</code>
+<code class="western">0.088000 s</code>
+<code class="western">0.060000 s</code>
+<code class="western">0.080000 s</code>
+<code class="western">0.088000 s</code></pre><p>
+For even faster, I try to rebuild this code by C. I believe it will
+run much faster than python.</p>
+<h3 class="western"><a name="7.-question-6"></a>7. Question 6</h3>
+<p>The <strong>test result:</strong></p>
+<pre class="western"><code class="western">[In]:</code>
+<code class="western">Input the function:sin</code>
+<code class="western">Input a:1</code>
+<code class="western">Input b:10</code>
+<code class="western">Input the number of sub-intervals:10000</code>
+<code class="western">[Out]:</code>
+<code class="western">The result is 1.3793738814984595</code></pre><p>
+<strong>Some illegal input error</strong><br/>
+If the function is not
+one of ‘sin’, ‘cos’ and ‘tan’, it will raise:</p>
+<pre class="western"><code class="western">Does not support this function!</code>
+<code class="western">Please input one of 'sin' 'cos' 'tan'</code></pre><p>
+And let you input again.</p>
+<p>If you input a b which is smaller than a, it will raise:</p>
+<pre class="western"><code class="western">a should be smaller than b</code>
+<code class="western">Please input a again:</code></pre><p>
+And let you input again.</p>
+</body>
+</html>

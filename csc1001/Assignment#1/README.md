@@ -111,6 +111,43 @@ For example, if the number is smaller than 3, it will raise:
 ```bash
 Do not have any number that meet the requirements!
 ```
+**The performance of the algorithm**
+In the latest version of this programe, I used a new algorithm to calculate prime number:
+```python
+#!q5.py
+def algorithm_Eratosthenes(max_number):
+    import math
+    list_of_bool = [True] * (max_number + 1)
+    list_of_bool[0] = list_of_bool[1] = False
+    for i in range(2, math.ceil(math.sqrt(max_number))):
+        if not list_of_bool[i]:
+            continue
+        for j in range(i * i, max_number + 1, i):
+            list_of_bool[j] = False
+    return list_of_bool
+```
+It uses sieve method to genarate prime number list.
+And I do the optimization for this algorithm so that it can run more fast.
+
+The results of how long time it cost to claculate the prime number smaller than 1000000:
+```bash
+0.173660 s
+0.127186 s
+0.129941 s
+0.140626 s
+0.134029 s
+```
+We can get faster by using `Pypy3` to run this code:
+The results:
+```bash
+0.048000 s
+0.088000 s
+0.060000 s
+0.080000 s
+0.088000 s
+```
+For even faster, I try to rebuild this code by C. I believe it will run much faster than python.
+
 ###7. Question 6
 The **test result:**
 ```bash
