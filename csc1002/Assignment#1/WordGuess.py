@@ -27,8 +27,7 @@ def randomly_question():
                     'tendency',
                     'interfere',
                     'vacant',
-                    'range',
-                    ]
+                    'range',]
     return list([i, 0 ] for i in random.choice(list_of_word))
 
 
