@@ -8,7 +8,6 @@
 # Word Guess Game
 import random
 
-
 def get_input():
     char = input("Guess latter:")
     if len(char) > 1 or not char.isalpha():
