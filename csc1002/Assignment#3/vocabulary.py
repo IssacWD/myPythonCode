@@ -11,6 +11,7 @@ import os
 import sys  # To obtain argument. If you can't open this with argument, That is fine.
 import sqlite3  # Import the database
 import webbrowser  # Use browser to display html
+import platform  # check the system because Windows may execute this bed
 
 # Config logging
 logging.basicConfig(level=logging.WARNING,
@@ -107,17 +108,16 @@ def view_word_HTML():
     webbrowser.open('static/Vocabulary.html')
 
 # read database and generate html text
-def generate_word_text_from_DB(DB_obj, tips=True):
+def generate_word_text_from_DB(DB_obj, reverse=False):
     head = open('static/head.html', 'r').readline()  # read html head
     # if there no argument, display this
-    if tips: head += '<h2 id="vocabulary-toefl">If you want doc file, please use \'python vocabulary.py -b\'</h2>'
     foot = open('static/foot.html', 'r').readline()  # read the html footer
     word_tag = '<h4 id="1.-word">%d. %s</h4>'  # word html tag
     content_tag = '<pre><code>%s</code></pre>'  # content html tag
     output_text = head  # prepare the output html code
     word_text_list = list()  # prepare a list for every words
     index = 0  # count the words
-    select_cursor = _select_word(DB_obj.cursor(), args[4])  # read the database
+    select_cursor = _select_word(DB_obj.cursor(), reverse)  # read the database
     while True:  # start a loop to read every words
         item = select_cursor.fetchone()  # fetch a word
         if item == None: break  # if there is not word exist, break loop
@@ -172,32 +172,35 @@ def check_argument(argv, length):
 
 # main
 if __name__ == '__main__':
-    if len(ARGVs) == 1:
-        view_help_HTML()
-        exit()
-# ################################################################
-# !!!! I'M THINKING THAT MAYBE TA's COMPUTER IS WINDOWS OS
-#     SO I SET THE FIRST ARGUMENT IS FALSE
-#     WHICH MEANS YOU DON'T NEED TO PUT -b ARGUMENT TO GET DOC FILE
-# ################################################################
-    args = [False, 'word.db', None, 'TOEFL.txt', False]
-    for argv in ARGVs:
-        if argv.startswith('-b') or argv.startswith('--both'):
-            args[0] = False ; args[2] = 'Vocabulary'
-        elif argv.startswith('-db'):
-            if check_argument(argv, 3): args[1] = argv[3:]
-        elif argv.startswith('-o'):
-            if check_argument(argv, 2):
-                args[2] = argv[2:]
-                args[0] = False
-        elif argv.startswith('-t'):
-            if check_argument(argv,2): args[3] = argv[2:]
-        elif argv.startswith('-r'): args[4] = True
+#     if len(ARGVs) == 1:
+#         view_help_HTML()
+#         exit()
+# # ################################################################
+# # !!!! I'M THINKING THAT MAYBE TA's COMPUTER IS WINDOWS OS
+# #     SO I SET THE FIRST ARGUMENT IS FALSE
+# #     WHICH MEANS YOU DON'T NEED TO PUT -b ARGUMENT TO GET DOC FILE
+# # ################################################################
+#     args = [False, 'word.db', None, 'TOEFL.txt', False]
+#     for argv in ARGVs:
+#         if argv.startswith('-b') or argv.startswith('--both'):
+#             args[0] = False ; args[2] = 'Vocabulary'
+#         elif argv.startswith('-db'):
+#             if check_argument(argv, 3): args[1] = argv[3:]
+#         elif argv.startswith('-o'):
+#             if check_argument(argv, 2):
+#                 args[2] = argv[2:]
+#                 args[0] = False
+#         elif argv.startswith('-t'):
+#             if check_argument(argv,2): args[3] = argv[2:]
+#         elif argv.startswith('-r'): args[4] = True
     # initialize database
-    DB_obj, cursor_obj = init_DB(args[1])
+    DB_obj, cursor_obj = init_DB('word.db')
     # read txt file
-    generate_words_DB(args[3])
+    generate_words_DB('TOEFL.txt')
     # get the output text
-    output_text = generate_word_text_from_DB(DB_obj, args[0])
-    generate_file(output_text, args[2])
-    view_word_HTML()
+    output_text = generate_word_text_from_DB(DB_obj, False)
+    re_output_text = generate_word_text_from_DB(DB_obj, True)
+    generate_file(output_text, 'Vocabulary')
+    generate_file(re_output_text, 're_Vocabulary')
+    # view_word_HTML()
+

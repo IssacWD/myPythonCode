@@ -1,5 +1,6 @@
 #CSC1002 Assignment #3#
 ##`Please read this before you run this program`##
+#`I rewrite this program because it may not run well on Windows OS. So I cut down a lot of features. If you use Unix like OS, it will run very good! And this is write for Unix like OS. If you are TA or Windows user, 'How to run' will not fit you.`
 ###1. How to run###
 #####Before running this program, please check whether your computer has DataBase `sqlite3`. This program depends on `sqlite3`.Defaultly, `sqlite3` will be installed when you install python, it is a buildin module in Python3.#####
 1. This program need you to input arguments when you run it. **So please be sure that you run this program in CMD or Terminal.**
@@ -40,11 +41,13 @@ Now you can execute SQL to database:
 #!vocabulary.py
 curs.execute(SQL)
 ```
-My words are all stored in the table 'word', it has five fields.
+My words are all stored in the table 'word', it has six fields.
 ```
 TABLE word
-word    varchar    limit:255
-mean    varchar    limit:255
+word    varchar		limit:255
+rword	varchar		limit:255
+mean    varchar		limit:255
+eg		varchar		limit:255
 synonym    varchar    limit:255
 abtobym    varchar    limit:255
 ```
@@ -52,3 +55,5 @@ abtobym    varchar    limit:255
 For practicing, I use logging module to log the program.
 The .log file will be 'Vocabulary.log'
 You can check it to know if where has some exception.
+###4. How it run###
+Firstly, it will initialize a SQLite3 database. And then read the text file line by line. I use `re` module to compile word and the content. I set a buffer word and buffer content list. Once it read a new word then reset the buffer word and add the content list into database. The second field in list is `rword`. This is for reverse order. When we need to output a file, it will select from database order by word or rword. I set a html like style so that the ouput file has styles.
