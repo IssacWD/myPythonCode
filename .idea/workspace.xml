@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f79e1f22-a8c5-4779-baff-d2fd41fab40e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/csc1002/Assignment#3/Vocabulary.log" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/jason.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/jason.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/csc1002/Assignment#3/README.md" afterPath="$PROJECT_DIR$/csc1002/Assignment#3/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/csc1002/Assignment#3/static/Vocabulary.html" afterPath="$PROJECT_DIR$/csc1002/Assignment#3/static/Vocabulary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/csc1002/Assignment#3/vocabulary.py" afterPath="$PROJECT_DIR$/csc1002/Assignment#3/vocabulary.py" />
     </list>
     <ignored path="myPythonCode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,23 +20,23 @@
     <SUITE FILE_PATH="coverage/myPythonCode$vocabulary.coverage" NAME="vocabulary Coverage Results" MODIFIED="1458489530264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csc1002/Assignment#3" />
     <SUITE FILE_PATH="coverage/myPythonCode$aSimpleKey.coverage" NAME="aSimpleKey Coverage Results" MODIFIED="1452675246191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/myPythonCode$sortPython.coverage" NAME="sortPython Coverage Results" MODIFIED="1452612101334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/myPythonCode$q5.coverage" NAME="q5 Coverage Results" MODIFIED="1456423586530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csc1001/Assignment#1" />
-    <SUITE FILE_PATH="coverage/myPythonCode$q1.coverage" NAME="q1 Coverage Results" MODIFIED="1456237994559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csc1001/Assignment#1" />
+    <SUITE FILE_PATH="coverage/myPythonCode$q5.coverage" NAME="q5 Coverage Results" MODIFIED="1459362373569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csc1001/Assignment#2" />
     <SUITE FILE_PATH="coverage/myPythonCode$assignment3.coverage" NAME="assignment3 Coverage Results" MODIFIED="1458395411380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csc1002/Assignment#3" />
+    <SUITE FILE_PATH="coverage/myPythonCode$q1.coverage" NAME="q1 Coverage Results" MODIFIED="1459355048261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csc1001/Assignment#2" />
     <SUITE FILE_PATH="coverage/myPythonCode$test_socket.coverage" NAME="test_socket Coverage Results" MODIFIED="1458465382824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csc1002/Assignment#3" />
     <SUITE FILE_PATH="coverage/myPythonCode$test.coverage" NAME="test Coverage Results" MODIFIED="1457548354981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csc1002/Assignment#2" />
     <SUITE FILE_PATH="coverage/myPythonCode$Question6.coverage" NAME="Question6 Coverage Results" MODIFIED="1455546211382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
-    <SUITE FILE_PATH="coverage/myPythonCode$q4.coverage" NAME="q4 Coverage Results" MODIFIED="1456239415146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csc1001/Assignment#1" />
     <SUITE FILE_PATH="coverage/myPythonCode$calculateFunction.coverage" NAME="calculateFunction Coverage Results" MODIFIED="1458395403698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csc1002/Assignment#2" />
+    <SUITE FILE_PATH="coverage/myPythonCode$q4.coverage" NAME="q4 Coverage Results" MODIFIED="1459361953019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csc1001/Assignment#2" />
     <SUITE FILE_PATH="coverage/myPythonCode$CalculateDistence.coverage" NAME="CalculateDistence Coverage Results" MODIFIED="1451808636601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/myPythonCode$q6.coverage" NAME="q6 Coverage Results" MODIFIED="1456316674176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csc1001/Assignment#1" />
     <SUITE FILE_PATH="coverage/myPythonCode$test_time_list_set.coverage" NAME="test_time_list_set Coverage Results" MODIFIED="1456420163136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csc1002" />
-    <SUITE FILE_PATH="coverage/myPythonCode$q3.coverage" NAME="q3 Coverage Results" MODIFIED="1456238655344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csc1001/Assignment#1" />
+    <SUITE FILE_PATH="coverage/myPythonCode$q6.coverage" NAME="q6 Coverage Results" MODIFIED="1459362840911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csc1001/Assignment#2" />
+    <SUITE FILE_PATH="coverage/myPythonCode$q3.coverage" NAME="q3 Coverage Results" MODIFIED="1459361527077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csc1001/Assignment#2" />
     <SUITE FILE_PATH="coverage/myPythonCode$WordGuess.coverage" NAME="WordGuess Coverage Results" MODIFIED="1456410647292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csc1002/Assignment#1" />
     <SUITE FILE_PATH="coverage/myPythonCode$calculate_PI.coverage" NAME="calculate_PI Coverage Results" MODIFIED="1453724364926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csc1002" />
     <SUITE FILE_PATH="coverage/myPythonCode$test_prime_algorithm.coverage" NAME="test_prime_algorithm Coverage Results" MODIFIED="1455517304743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csc1002" />
     <SUITE FILE_PATH="coverage/myPythonCode$testRational.coverage" NAME="testRational Coverage Results" MODIFIED="1453724355564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/myPythonCode$q2.coverage" NAME="q2 Coverage Results" MODIFIED="1456238211948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csc1001/Assignment#1" />
+    <SUITE FILE_PATH="coverage/myPythonCode$q2.coverage" NAME="q2 Coverage Results" MODIFIED="1459361291283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csc1001/Assignment#2" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -50,23 +47,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="vocabulary.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/csc1002/Assignment#3/vocabulary.py">
+      <file leaf-file-name="q4.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/csc1001/Assignment#2/q4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="6.978125">
-              <caret line="203" column="38" selection-start-line="203" selection-start-column="38" selection-end-line="203" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.06875">
+              <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="q5.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/csc1001/Assignment#2/q5.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="q6.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/csc1001/Assignment#2/q6.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
-                <element signature="e#249#278#0" expanded="true" />
-                <marker date="1459067548739" expanded="true" signature="1427:1450" placeholder="create table... word" />
-                <marker date="1459067548739" expanded="true" signature="1427:1468" placeholder="create table... word" />
-                <marker date="1459067548739" expanded="true" signature="1427:1505" placeholder="create table... word" />
-                <marker date="1459067548739" expanded="true" signature="1427:1521" placeholder="create table... word" />
-                <marker date="1459067548739" expanded="true" signature="1427:1542" placeholder="create table... word" />
-                <marker date="1459067548739" expanded="true" signature="1427:1563" placeholder="create table... word" />
-                <marker date="1459067548739" expanded="true" signature="2095:2174" placeholder="insert into word... " />
-                <marker date="1459067548739" expanded="true" signature="2717:2750" placeholder="select * fro... word" />
-                <marker date="1459067548739" expanded="true" signature="2717:2754" placeholder="select * fro... wordTable" />
-                <marker date="1459067548739" expanded="true" signature="2783:2821" placeholder="select * fro... word" />
+                <element signature="e#264#280#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,6 +132,12 @@
         <option value="$PROJECT_DIR$/csc1002/Assignment#3/test_socket.py" />
         <option value="$PROJECT_DIR$/csc1002/Assignment#3/ass3.py" />
         <option value="$PROJECT_DIR$/csc1002/Assignment#3/vocabulary.py" />
+        <option value="$PROJECT_DIR$/csc1001/Assignment#2/q1.py" />
+        <option value="$PROJECT_DIR$/csc1001/Assignment#2/q3.py" />
+        <option value="$PROJECT_DIR$/csc1001/Assignment#2/q2.py" />
+        <option value="$PROJECT_DIR$/csc1001/Assignment#2/q4.py" />
+        <option value="$PROJECT_DIR$/csc1001/Assignment#2/q5.py" />
+        <option value="$PROJECT_DIR$/csc1001/Assignment#2/q6.py" />
       </list>
     </option>
   </component>
@@ -135,9 +148,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="47" />
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="1319" />
-    <option name="height" value="772" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -180,7 +193,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -209,7 +221,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="csc1002" />
+              <option name="myItemId" value="csc1001" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -223,25 +235,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="csc1002" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Assignment#3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myPythonCode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myPythonCode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="csc1002" />
+              <option name="myItemId" value="csc1001" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -249,8 +243,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myPythonCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myPythonCode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csc1001" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assignment#1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -270,75 +283,93 @@
       <recent name="$PROJECT_DIR$/csc1001/Assignment#1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.vocabulary">
-    <configuration default="false" name="test_socket" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.q6">
+    <configuration default="false" name="q2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/csc1002/Assignment#3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/csc1001/Assignment#2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="myPythonCode" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/csc1002/Assignment#3/test_socket.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/csc1001/Assignment#2/q2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="q3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/csc1002/Assignment#2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/csc1001/Assignment#2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="myPythonCode" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/csc1002/Assignment#2/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/csc1001/Assignment#2/q3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="calculateFunction" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="q4" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/csc1002/Assignment#2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/csc1001/Assignment#2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="myPythonCode" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/csc1002/Assignment#2/calculateFunction.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/csc1001/Assignment#2/q4.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="assignment3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="q5" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/csc1002/Assignment#3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/csc1001/Assignment#2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="myPythonCode" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/csc1002/Assignment#3/assignment3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/csc1001/Assignment#2/q5.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="q6" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/csc1001/Assignment#2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="myPythonCode" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/csc1001/Assignment#2/q6.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -590,21 +621,23 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <list size="7">
+    <list size="8">
       <item index="0" class="java.lang.String" itemvalue="Python.aSimpleKey" />
       <item index="1" class="java.lang.String" itemvalue="Python.CalculateDistence" />
       <item index="2" class="java.lang.String" itemvalue="Python.vocabulary" />
-      <item index="3" class="java.lang.String" itemvalue="Python.test_socket" />
-      <item index="4" class="java.lang.String" itemvalue="Python.test" />
-      <item index="5" class="java.lang.String" itemvalue="Python.calculateFunction" />
-      <item index="6" class="java.lang.String" itemvalue="Python.assignment3" />
+      <item index="3" class="java.lang.String" itemvalue="Python.q2" />
+      <item index="4" class="java.lang.String" itemvalue="Python.q3" />
+      <item index="5" class="java.lang.String" itemvalue="Python.q4" />
+      <item index="6" class="java.lang.String" itemvalue="Python.q5" />
+      <item index="7" class="java.lang.String" itemvalue="Python.q6" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.test_socket" />
-        <item index="1" class="java.lang.String" itemvalue="Python.assignment3" />
-        <item index="2" class="java.lang.String" itemvalue="Python.calculateFunction" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.q6" />
+        <item index="1" class="java.lang.String" itemvalue="Python.q5" />
+        <item index="2" class="java.lang.String" itemvalue="Python.q4" />
+        <item index="3" class="java.lang.String" itemvalue="Python.q3" />
+        <item index="4" class="java.lang.String" itemvalue="Python.q2" />
       </list>
     </recent_temporary>
   </component>
@@ -622,8 +655,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="47" y="-4" width="1319" height="772" extended-state="6" />
-    <editor active="false" />
+    <frame x="47" y="24" width="1319" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.094010614" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -631,18 +664,18 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4432836" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985073" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4477612" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4432836" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4477612" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -665,59 +698,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="99" />
+      <option name="time" value="105" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/csc1002/Assignment#2/calculateFunction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/csc1002/Assignment#3/vocabulary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#249#278#0" expanded="true" />
-            <marker date="1459067548739" expanded="true" signature="1427:1450" placeholder="create table... word" />
-            <marker date="1459067548739" expanded="true" signature="1427:1468" placeholder="create table... word" />
-            <marker date="1459067548739" expanded="true" signature="1427:1505" placeholder="create table... word" />
-            <marker date="1459067548739" expanded="true" signature="1427:1521" placeholder="create table... word" />
-            <marker date="1459067548739" expanded="true" signature="1427:1542" placeholder="create table... word" />
-            <marker date="1459067548739" expanded="true" signature="1427:1563" placeholder="create table... word" />
-            <marker date="1459067548739" expanded="true" signature="2095:2174" placeholder="insert into word... " />
-            <marker date="1459067548739" expanded="true" signature="2717:2750" placeholder="select * fro... word" />
-            <marker date="1459067548739" expanded="true" signature="2717:2754" placeholder="select * fro... wordTable" />
-            <marker date="1459067548739" expanded="true" signature="2783:2821" placeholder="select * fro... word" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/csc1002/Assignment#2/calculateFunction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/csc1001/Assignment#1/q5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/csc1001/Assignment#1/q5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/csc1001/Assignment#1/q5.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -956,13 +941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/csc1001/Assignment#1/q1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25548387">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/csc1001/Assignment#1/q2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.59612906">
@@ -981,13 +959,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.484375">
           <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/csc1001/Assignment#1/q5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06875">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1028,21 +999,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/csc1002/Assignment#3/vocabulary.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.978125">
+        <state vertical-scroll-proportion="0.0">
           <caret line="203" column="38" selection-start-line="203" selection-start-column="38" selection-end-line="203" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csc1001/Assignment#1/q1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csc1001/Assignment#1/q5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csc1001/Assignment#2/q1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csc1001/Assignment#2/q2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csc1001/Assignment#2/q3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.20625">
+          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csc1001/Assignment#2/q6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="e#249#278#0" expanded="true" />
-            <marker date="1459067548739" expanded="true" signature="1427:1450" placeholder="create table... word" />
-            <marker date="1459067548739" expanded="true" signature="1427:1468" placeholder="create table... word" />
-            <marker date="1459067548739" expanded="true" signature="1427:1505" placeholder="create table... word" />
-            <marker date="1459067548739" expanded="true" signature="1427:1521" placeholder="create table... word" />
-            <marker date="1459067548739" expanded="true" signature="1427:1542" placeholder="create table... word" />
-            <marker date="1459067548739" expanded="true" signature="1427:1563" placeholder="create table... word" />
-            <marker date="1459067548739" expanded="true" signature="2095:2174" placeholder="insert into word... " />
-            <marker date="1459067548739" expanded="true" signature="2717:2750" placeholder="select * fro... word" />
-            <marker date="1459067548739" expanded="true" signature="2717:2754" placeholder="select * fro... wordTable" />
-            <marker date="1459067548739" expanded="true" signature="2783:2821" placeholder="select * fro... word" />
+            <element signature="e#264#280#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csc1001/Assignment#2/q5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csc1001/Assignment#2/q4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06875">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
