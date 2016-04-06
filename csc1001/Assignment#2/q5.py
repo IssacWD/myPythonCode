@@ -8,7 +8,7 @@
 # The Question Five
 
 def change(n, locker_status):
-    for i in range(n - 1, len(locker_status)):
+    for i in range(n, len(locker_status), n + 1):
         locker_status[i] = not locker_status[i]
 
 
@@ -18,4 +18,4 @@ if __name__ == '__main__':
         change(i, locker_status)
     for index, value in enumerate(locker_status):
         if value:
-            print(format(index, '<3d'), end='')
+            print(format(index + 1, '<3d'), end='')
