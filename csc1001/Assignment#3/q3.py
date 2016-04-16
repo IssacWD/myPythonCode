@@ -76,7 +76,7 @@ class River:
         for position, item in enumerate(buffer_list):
             if len(item) != 1:
                 if isinstance(item[0], Empty):
-                    
+
 
 
 
