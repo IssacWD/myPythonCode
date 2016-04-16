@@ -1,10 +1,10 @@
 # coding=utf-8
-#********************************************************
-#   > OS     : Ubuntu 15.10
-#	> Author : JasonGUTU
-#	> Mail   : intergujinjin@foxmail.com
-#	> Time   : 2016/3/30
-#********************************************************
+# ********************************************************
+#   > OS     : OS X 10.11.3
+# 	> Author : JasonGUTU
+# 	> Mail   : intergujinjin@foxmail.com
+# 	> Time   : 2016/4/16
+# ********************************************************
 # The Question One
 
 class Flower:
@@ -40,5 +40,8 @@ class Flower:
         else:
             self.number_of_petals = number_of_petals
 
+
 if __name__ == '__main__':
     print('Flower class.')
+    print('This file can not be run directly.')
+    print('You can import this file or have a look about it.')
