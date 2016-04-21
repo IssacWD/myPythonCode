@@ -1,6 +1,4 @@
 #CSC1001 Assignment #3
-###### JasonGUTU
-######ID: 115010148
 ---
 ###1. Question one
 This is a class for flowers. It has some attributions, its name (type string), the number of petals(type integer), its price(type float). You can not run this python file directly. You can import this class if you want. You can initial this class with an argument 'name', if you have not indicate the name when you initial it , the defualt name will be `'init name'`. You can set the name with the method `setName()`. Other attributions all need to set with `set*` method.
