@@ -8,8 +8,11 @@
 # The Question One
 
 class Flower:
-    def __init__(self):
-        self.name = 'init name'
+    def __init__(self, name=None):
+        if name is not None:
+            self.name = name
+        else:
+            self.name = 'init name'
         self.number_of_petals = 5
         self.price = 1.0
 

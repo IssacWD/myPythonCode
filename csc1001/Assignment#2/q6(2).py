@@ -6,7 +6,6 @@
 #	> Time   : 2016/3/30
 #********************************************************
 # The Question Six
-# status_list = [number * 8]
 
 def is_conflict(status_tuple, next_row_place):
     this_row_number = len(status_tuple)

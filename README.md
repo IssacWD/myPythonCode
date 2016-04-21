@@ -1,2 +1,3 @@
-# Some scattered code wrote by Python
+###Some code wrote by Python
+###Assignments and something
 

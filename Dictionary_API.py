@@ -2,9 +2,9 @@
 # coding=utf-8
 #********************************************************
 #   > OS     : Ubuntu 14.04
-#	> Author : JasonGUTU
-#	> Mail   : intergujinjin@foxmail.com
-#	> Time   : 2016/2/4
+#   > Author : JasonGUTU
+#   > Mail   : intergujinjin@foxmail.com
+#   > Time   : 2016/2/4
 #********************************************************
 
 '''
@@ -18,26 +18,28 @@ keyfrom：magkathea
 '''
 # import os
 # import sys
-import urllib.parse, urllib.request
+import urllib.parse
+import urllib.request
 import json
 
 
 API_KEY = '2110071943'
 KEYFROM = 'magkathea'
 
+
 def get_translation_YouDao(txt):
     url = 'http://fanyi.youdao.com/openapi.do'
     data = {
-        'keyfrom':KEYFROM,
-        'key':API_KEY,
-        'type':'data',
-        'doctype':'json',
-        'version':1.1,
-        'q':txt
+        'keyfrom': KEYFROM,
+        'key': API_KEY,
+        'type': 'data',
+        'doctype': 'json',
+        'version': 1.1,
+        'q': txt
     }
     url = url + '?' + urllib.parse.urlencode(data)
     response_bytes = urllib.request.urlopen(urllib.request.Request(url)).read()
-    response = str(response_bytes, encoding = 'utf-8')
+    response = str(response_bytes, encoding='utf-8')
     try:
         result = json.loads(response)
         return result
@@ -68,17 +70,18 @@ def get_translation_YouDao(txt):
 #     ]
 # }
 
+
 def S_json_YouDao(json_data):
     query = json_data.get('query', '')
     translation = json_data.get('translation', '')
     basic = json_data.get('basic', '')
-    sequence = json_data.get('web',[])
+    sequence = json_data.get('web', [])
     phonetic = ''
     explains_txt = ''
     log_word_explains = ''
     if basic:
-        phonetic = basic.get('phonetic','')
-        explains = basic.get('explains',[])
+        phonetic = basic.get('phonetic', '')
+        explains = basic.get('explains', [])
         for obj in explains:
             explains_txt += obj+'\n'
             log_word_explains += obj+','
@@ -96,6 +99,7 @@ def S_json_YouDao(json_data):
     print(explains_txt)
     print('-' * 20 + '\n' + seq_txt)
     print('*' * 40)
+
 
 def main():
     while True:
