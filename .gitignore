@@ -1,5 +1,6 @@
 # pycharm
 .idea/
+*.idea/
 
 # cache file
 *__pycache__/

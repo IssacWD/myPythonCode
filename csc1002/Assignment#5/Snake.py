@@ -1,7 +1,7 @@
 # coding=utf-8
 # ********************************************************
 #   > OS     : OS X 10.11.3
-#   > Author : JasonGUTU
+#   > Author : JasonGUTU (I have no choice to deal with this code, it is ugly. I know that)
 #   > Mail   : intergujinjin@foxmail.com
 #   > Time   : 2016/4/22
 # ********************************************************
@@ -49,21 +49,13 @@ class Snake:
         self.__length += 1
 
     def if_game_over(self):
-        buffer_list = list()
         for segment in self.__body_segment:
-            if segment in buffer_list:
+            if not 0 < segment[0] < HEIGHT:
                 return True
-            else:
-                for segment in self.__body_segment:
-                    if not 0 < segment[0] < HEIGHT:
-                        return True
-                    elif not 0 < segment[1] < WIDTH:
-                        return True
-                buffer_list.append(segment)
-        copy_segment = self.__body_segment[:]
-        for i in range(len(copy_segment)):
-            copy_segment[i] = str(copy_segment[i])
-        if len(set(copy_segment)) == len(self.__body_segment):
+            elif not 0 < segment[1] < WIDTH:
+                print('222222222222222')
+                return True
+        if GetNextHead() in self.__body_segment:
             return True
         return False
 
@@ -80,11 +72,9 @@ class Snake:
         additional_segment = [self.__body_segment[0][0] + DIRECTION_ARRAY[direction_index][0],
                              self.__body_segment[0][1] + DIRECTION_ARRAY[direction_index][1]]
         self.__body_segment.insert(0, additional_segment)
-        if self.__about_to_eat:
-            self.__about_to_eat = False
-        else:
+        if not self.__about_to_eat:
             self.__body_segment.pop()
-            self.__about_to_eat = False
+        self.__about_to_eat = False
 
 
 def DrawBackground():
@@ -107,8 +97,7 @@ def DrawFood():
     labelArray[food[0]][food[1]].photo = foodImage
 
 
-def IsFoodInWay():
-    'If food is in the next position ahead, return True. Otherwise, return False.'
+def GetNextHead():
     direction_index = int()
     if snake.get_direction() == 'N':
         direction_index = 0
@@ -120,46 +109,59 @@ def IsFoodInWay():
         direction_index = 3
     body_segment = snake.get_body_segment()
     head = body_segment[0]
-    next_head = [head[0]+DIRECTION_ARRAY[direction_index][0],
-                head[1]+DIRECTION_ARRAY[direction_index][1]]
-    if food == next_head:
+    next_head = [head[0] + DIRECTION_ARRAY[direction_index][0],
+                 head[1] + DIRECTION_ARRAY[direction_index][1]]
+    return next_head
+
+def IsFoodInWay():
+    'If food is in the next position ahead, return True. Otherwise, return False.'
+    if food == GetNextHead():
         return True
-    else:
-        return False
+    return False
 
 
 def GoGoGo():
-    """ continously movement of the snake"""
+    """ Continously movement of the snake"""
     global food  # global var in function, you niubi!
-    keep_on_moving = True
+    if snake.if_game_over():
+        keep_on_moving = False
+        labelText.configure(text='Game Over! Your score is: %s' % snake.get_length())
+        return
+    else:
+        keep_on_moving = True
     if IsFoodInWay():
         # snake.add_body_segment(food)
         snake.about_to_eat_apple()
         labelText.configure(text='Snake Length: %s' % snake.get_length())
         labelArray[food[0]][food[1]].configure(image='')
-        food = [randint(1, HEIGHT-2), randint(1, WIDTH-2)]
+        food = [randint(1, HEIGHT - 2), randint(1, WIDTH - 2)]
     snake.move()
     DrawBackground()
     DrawSnake()
     DrawFood()
     if keep_on_moving:  # Hint: this is related to question (2) and (3)
         root.after(500, GoGoGo)
+        print(snake.get_body_segment())
 
 
 def SetDirectionN(event):
-    snake.set_direction('N')
+    if not snake.get_direction() == 'S':
+        snake.set_direction('N')
 
 
 def SetDirectionS(event):
-    snake.set_direction('S')
+    if not snake.get_direction() == 'N':
+        snake.set_direction('S')
 
 
 def SetDirectionW(event):
-    snake.set_direction('W')
+    if not snake.get_direction() == 'E':
+        snake.set_direction('W')
 
 
 def SetDirectionE(event):
-    snake.set_direction('E')
+    if not snake.get_direction() == 'W':
+        snake.set_direction('E')
 
 
 if __name__ == '__main__':
@@ -175,16 +177,13 @@ if __name__ == '__main__':
     for i in range(HEIGHT):
         labelRow = []
         for j in range(WIDTH):
-            labelRow.append(Label(root, text='%s,%s' % (i, j), bg='yellow'))
+            labelRow.append(Label(root, text='', bg='yellow'))
             labelRow[j].place(
                 x=j * CELL_WIDTH, y=(i + 1) * CELL_HEIGHT, width=CELL_WIDTH, height=CELL_HEIGHT)
         labelArray.append(labelRow[:])
     DrawBackground()
     DrawSnake()
-    if snake.if_game_over():
-        labelText.configure(text='Game Over! Your score is: %s' % snake.get_length())
-    else:
-        GoGoGo()
+    GoGoGo()
 
     root.bind("<KeyRelease-Up>", SetDirectionN)
     root.bind("<KeyRelease-Down>", SetDirectionS)
