@@ -60,6 +60,11 @@ class Snake:
                     elif not 0 < segment[1] < WIDTH:
                         return True
                 buffer_list.append(segment)
+        copy_segment = self.__body_segment[:]
+        for i in range(len(copy_segment)):
+            copy_segment[i] = str(copy_segment[i])
+        if len(set(copy_segment)) == len(self.__body_segment):
+            return True
         return False
 
     def move(self):
@@ -127,7 +132,6 @@ def GoGoGo():
     """ continously movement of the snake"""
     global food  # global var in function, you niubi!
     keep_on_moving = True
-    # while not snake.if_game_over():
     if IsFoodInWay():
         # snake.add_body_segment(food)
         snake.about_to_eat_apple()
@@ -140,8 +144,6 @@ def GoGoGo():
     DrawFood()
     if keep_on_moving:  # Hint: this is related to question (2) and (3)
         root.after(500, GoGoGo)
-    # labelText.configure(text='Game Over! Your score is: %s' % snake.get_length())
-
 
 
 def SetDirectionN(event):
@@ -179,7 +181,10 @@ if __name__ == '__main__':
         labelArray.append(labelRow[:])
     DrawBackground()
     DrawSnake()
-    GoGoGo()
+    if snake.if_game_over():
+        labelText.configure(text='Game Over! Your score is: %s' % snake.get_length())
+    else:
+        GoGoGo()
 
     root.bind("<KeyRelease-Up>", SetDirectionN)
     root.bind("<KeyRelease-Down>", SetDirectionS)
@@ -187,6 +192,3 @@ if __name__ == '__main__':
     root.bind("<KeyRelease-Right>", SetDirectionE)
 
     root.mainloop()
-
-
-
