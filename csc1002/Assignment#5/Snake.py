@@ -49,12 +49,14 @@ class Snake:
         self.__length += 1
 
     def if_game_over(self):
+        """ judge whether the game is over """
+        # over map
         for segment in self.__body_segment:
             if not 0 < segment[0] < HEIGHT:
                 return True
             elif not 0 < segment[1] < WIDTH:
-                print('222222222222222')
                 return True
+        # eat self
         if GetNextHead() in self.__body_segment:
             return True
         return False
@@ -78,26 +80,31 @@ class Snake:
 
 
 def DrawBackground():
-    'Refresh the background to all yellow.'
+    """Refresh the background to all yellow."""
     for i in range(HEIGHT):
         for j in range(WIDTH):
             labelArray[i][j].configure(bg='yellow')
 
 
 def DrawSnake():
-    'Draw the snake in the background.'
-    for segment in snake.get_body_segment():
-        labelArray[segment[0]][segment[1]].configure(bg='brown')
+    """Draw the snake in the background."""
+    try:
+        for segment in snake.get_body_segment():
+            labelArray[segment[0]][segment[1]].configure(bg='brown')
+    except:
+        pass
+
 
 
 def DrawFood():
-    'Draw the food'
+    """Draw the food"""
     foodImage = PhotoImage(file='apple.gif')
     labelArray[food[0]][food[1]].configure(image=foodImage)
     labelArray[food[0]][food[1]].photo = foodImage
 
 
 def GetNextHead():
+    """ get next head segment """
     direction_index = int()
     if snake.get_direction() == 'N':
         direction_index = 0
@@ -114,10 +121,18 @@ def GetNextHead():
     return next_head
 
 def IsFoodInWay():
-    'If food is in the next position ahead, return True. Otherwise, return False.'
+    """If food is in the next position ahead, return True. Otherwise, return False."""
     if food == GetNextHead():
         return True
     return False
+
+
+def FoodGenerator():
+    """ food generator, avoid generate food in the snake"""
+    food = [randint(1, HEIGHT - 2), randint(1, WIDTH - 2)]
+    if food in snake.get_body_segment():
+        food = FoodGenerator()
+    return food
 
 
 def GoGoGo():
@@ -134,38 +149,37 @@ def GoGoGo():
         snake.about_to_eat_apple()
         labelText.configure(text='Snake Length: %s' % snake.get_length())
         labelArray[food[0]][food[1]].configure(image='')
-        food = [randint(1, HEIGHT - 2), randint(1, WIDTH - 2)]
+        food = FoodGenerator()
     snake.move()
     DrawBackground()
     DrawSnake()
     DrawFood()
     if keep_on_moving:  # Hint: this is related to question (2) and (3)
         root.after(500, GoGoGo)
-        print(snake.get_body_segment())
 
 
 def SetDirectionN(event):
-    if not snake.get_direction() == 'S':
+    if not snake.get_direction() == 'S':  # can't go back directly
         snake.set_direction('N')
 
 
 def SetDirectionS(event):
-    if not snake.get_direction() == 'N':
+    if not snake.get_direction() == 'N':  # can't go back directly
         snake.set_direction('S')
 
 
 def SetDirectionW(event):
-    if not snake.get_direction() == 'E':
+    if not snake.get_direction() == 'E':  # can't go back directly
         snake.set_direction('W')
 
 
 def SetDirectionE(event):
-    if not snake.get_direction() == 'W':
+    if not snake.get_direction() == 'W':  # can't go back directly
         snake.set_direction('E')
 
 
 if __name__ == '__main__':
-    snake = Snake()  # init Sanke
+    snake = Snake()  # init Snake
     food = [5, 10]  # Initial position of food
     root = Tk()
     root.title('Snake')
@@ -177,17 +191,17 @@ if __name__ == '__main__':
     for i in range(HEIGHT):
         labelRow = []
         for j in range(WIDTH):
-            labelRow.append(Label(root, text='', bg='yellow'))
+            labelRow.append(Label(root, bg='yellow'))
             labelRow[j].place(
                 x=j * CELL_WIDTH, y=(i + 1) * CELL_HEIGHT, width=CELL_WIDTH, height=CELL_HEIGHT)
         labelArray.append(labelRow[:])
     DrawBackground()
     DrawSnake()
     GoGoGo()
-
+    # bind action
     root.bind("<KeyRelease-Up>", SetDirectionN)
     root.bind("<KeyRelease-Down>", SetDirectionS)
     root.bind("<KeyRelease-Left>", SetDirectionW)
     root.bind("<KeyRelease-Right>", SetDirectionE)
-
+    # mainloop start
     root.mainloop()
