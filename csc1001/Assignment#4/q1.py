@@ -3,11 +3,13 @@
 """
 Author : JasonGUTU
 Email  : hellojasongt@gmail.com
-"""
+
+Qeustion One"""
 from SLList import SLList, Node
 
 
 def recursion_count_link_list(head_node, link_list):
+    """ recursion to count items in list """
     if head_node.pointer is None:
         return 1
     else:

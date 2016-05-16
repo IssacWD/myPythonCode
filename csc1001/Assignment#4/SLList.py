@@ -46,7 +46,8 @@ class SLList:
 
     def iterate(self):
         pointer = self.head
-        print('The element in the list: ')
+        # print('The element in the list: ')
         while pointer is not None:
-            print(pointer.element)
+            result = pointer.element
             pointer = pointer.pointer
+            yield result
